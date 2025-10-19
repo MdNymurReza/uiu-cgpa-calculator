@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UIU CGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎓 UIU CGPA Calculator</h1>
+
+  <div id="auth-section">
+    <h2>Login / Register</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+  </div>
+
+  <div id="calculator-section" style="display:none;">
+    <h2>Add Trimester</h2>
+    <input type="text" id="trimesterName" placeholder="e.g. Trimester 1">
+    <button id="addTrimesterBtn">Add Trimester</button>
+
+    <div id="trimesterContainer"></div>
+
+    <h3>Total CGPA: <span id="totalCGPA">0.00</span></h3>
+    <button id="saveDataBtn">Save Data</button>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

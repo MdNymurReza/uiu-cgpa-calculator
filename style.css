@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  padding: 20px;
+  text-align: center;
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+#trimesterContainer {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.course-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
