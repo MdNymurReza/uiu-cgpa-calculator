@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UIU CGPA Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>🎓 UIU CGPA Calculator</h1>
 
+  <!-- Auth Section -->
   <div id="auth-section">
     <h2>Login / Register</h2>
     <input type="email" id="email" placeholder="Email">
@@ -16,11 +18,12 @@
     <button id="registerBtn">Register</button>
   </div>
 
+  <!-- Calculator Section -->
   <div id="calculator-section" style="display:none;">
     <h2>Add Trimester</h2>
-    <input type="text" id="trimesterName" placeholder="e.g. Trimester 1">
+    <input type="text" id="trimesterName" placeholder="Trimester Name (e.g., 1st Trimester)">
     <button id="addTrimesterBtn">Add Trimester</button>
-
+    
     <div id="trimesterContainer"></div>
 
     <h3>Total CGPA: <span id="totalCGPA">0.00</span></h3>
@@ -28,7 +31,7 @@
     <button id="logoutBtn">Logout</button>
   </div>
 
-  <script src="firebase.js"></script>
-  <script src="script.js"></script>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

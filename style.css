@@ -1,12 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f8fafc;
-  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9fafb;
   text-align: center;
+  padding: 30px;
+  color: #222;
+}
+
+h1 {
+  color: #007bff;
 }
 
 input, button {
-  padding: 8px;
+  padding: 10px;
   margin: 5px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -16,16 +21,36 @@ button {
   background: #007bff;
   color: white;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
 }
 
 #trimesterContainer {
   margin-top: 20px;
-  text-align: left;
   display: inline-block;
+  text-align: left;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.trimester {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
 }
 
 .course-row {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 5px;
+}
+
+.course-row input {
+  width: 100px;
 }
